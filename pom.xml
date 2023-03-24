@@ -30,6 +30,21 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <distributionManagement>
+      <repository>
+        <id>nexus</id>
+        <name>Landmark Technologies Releases Nexus Repository</name>
+        <url>http://172.31.35.124:8181/mysizamtek/repository/sami-jules_Release/</url>
+      </repository>
+      
+      <snapshotRepository>
+        <id>nexus</id>
+        <name>Landmark Technologies Snapshot Nexus Repository </name>
+        <url>http://172.31.35.124:8181/mysizamtek/repository/sami-jules/</url>
+      </snapshotRepository>
+      
+  </distributionManagement>
 
   <build>
     <finalName>sami-demo</finalName>
