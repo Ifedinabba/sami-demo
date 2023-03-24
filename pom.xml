@@ -4,9 +4,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.sizamte[C[C[C[C[C[C[3~[C[C[C[3~[3~[3~[C[C[C[C[C[C[C[C[C[Ck</groupId>
+  <groupId>com.sizamtek</groupId>
   <artifactId>sami-demo</artifactId>
-  <version>2.0-SNAPSHOT</version>
+  <version>2.0</version>
   <packaging>war</packaging>
 
   <name>sami-demo Maven Webapp</name>
@@ -18,8 +18,8 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <sonar.host.url>http://172.31.11.50:9000/</sonar.host.url>
-    <sonar.login>Ifedinabba</sonar.login>
-    <sonar.password>Surefijo_11</sonar.password>
+    <sonar.login>admin</sonar.login>
+    <sonar.password>admin</sonar.password>
   </properties>
 
   <dependencies>
@@ -30,6 +30,21 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <distributionManagement>
+      <repository>
+        <id>nexus</id>
+        <name>Landmark Technologies Releases Nexus Repository</name>
+        <url>http://172.31.35.124:8181/mysizamtek/repository/sami-jules_Release/</url>
+      </repository>
+      
+      <snapshotRepository>
+        <id>nexus</id>
+        <name>Landmark Technologies Snapshot Nexus Repository </name>
+        <url>http://172.31.35.124:8181/mysizamtek/repository/sami-jules/</url>
+      </snapshotRepository>
+      
+  </distributionManagement>
 
   <build>
     <finalName>sami-demo</finalName>
